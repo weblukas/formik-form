@@ -1,0 +1,86 @@
+.formContainer {
+    display: flex;
+    justify-content: center;
+    margin: 4rem auto;
+  
+    
+  }
+  .form {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .textField {
+    background: rgb(243, 241, 241);
+    border: 1px solid rgb(196, 186, 186);
+    border-radius: 3px;
+    box-shadow: 0 0 10px 1px rgba(122, 118, 118, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 30px;
+  }
+  
+  .submitBtn {
+    display: block;
+    width: 10rem;
+    background: #47cf73;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px auto;
+  }
+  
+  ///////Floating label
+  
+  .inputContainer {
+    position: relative;
+    width: 100%;
+  }
+  
+  .inputContainer:focus-within label {
+    transform: translate(0, -25px) scale(1);
+    color: #0a53e4;
+  }
+  
+  .inputContainer .filled {
+    transform: translate(0, 12px) scale(0.8);
+  }
+  
+  .inputContainer label {
+    position: absolute;
+    pointer-events: none;
+    transform: translate(0, 23px) scale(1);
+    transform-origin: top left;
+    transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    color: #6f81a5;
+    font-size: 16px;
+    line-height: 1;
+    left: 27%;
+    top: 30px;
+  }
+  
+  .inputContainer input {
+    height: 64px;
+    border-radius: 4px;
+    border: none;
+    padding: 8px 16px 4px 16px;
+    font-size: 16px;
+    line-height: 1;
+    outline: none;
+    box-shadow: none;
+    transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  }
+  
+  .inputContainer input:focus {
+    box-shadow: 0 0 0 2px #79b1ff;
+  }
+  
+  .errorMsg {
+    color: red;
+    margin: -20px 0 0 -30%;
+  }
+  
